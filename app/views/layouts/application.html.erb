@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miniblog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+  <li><%= link_to "Home",   '#' %></li>
+  <li><%= link_to "blog",   '#' %></li>
+  <li><%= link_to "about", '#' %></li>
+  <li><%= link_to "help", '#' %></li>
+  <% end %>>
+    <%= yield %>
+  </body>
+</html>
